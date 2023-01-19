@@ -1,28 +1,29 @@
 <?php
  
-interface TrianguloAreaInterface{
+ //para solucionarlo debemos crear una interface que se llame cursoInterface donde colocaremos el código para que nos
+ //muestre el curso
+interface cursoInterface{
     //Código
 }
 
-interface RectanguloAreaInterface{
-    //Código
-}
 
-class FormaGeometrica{
-    protected $area;
+class Estudiante{
+    protected $curso;
 
-    public function __construct(AreaInterface $area)
-    {
-        $this->area = $area;
+    public function __construct(cursoInterface $curso)
+    {//Ahora la clase estudiante ya no depende de una clase pequeña sino que toma el valor de la interface
+        $this->curso = $curso;
     }
 
 }
 
-class Rectangulo implements RectanguloAreaInterface{
+
+//Y a su vez las clases implementan la interface creada
+class Primero implements cursoInterface{
 //Código
 }
 
-class Triangulo implements TrianguloAreaInterface{
+class Segundo implements cursoInterface{
 //Código
 }
 
