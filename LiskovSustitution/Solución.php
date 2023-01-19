@@ -33,6 +33,7 @@ class AudioLibroLaIliada extends LibroFísico{
         //Código
     }
     
+    //Cuando ocupamos las opciones de una clase podemos tomar todas o solo que necesitemos, y el código siempre estará bien
     public function tipoDePasta(){
         //Código
     }
